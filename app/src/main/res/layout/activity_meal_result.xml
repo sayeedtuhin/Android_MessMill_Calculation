@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@color/background"
+    android:padding="5dp"
+    android:orientation="vertical"
+
+    tools:context=".MealResultActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="3dp">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:inputType="number"
+                android:text="Meal Ret : "
+                android:id="@+id/mealRetR"
+                android:layout_weight="1"
+                android:background="@color/result_head_baground"
+                android:textColor="@color/white"
+                android:layout_marginBottom="1dp"
+                android:layout_marginRight="1dp"
+                android:padding="2dp"
+                android:textSize="@dimen/resultTextSize"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:inputType="number"
+                android:text="Total Meal : "
+                android:id="@+id/totalMealR"
+                android:layout_weight="1"
+                android:background="@color/result_head_baground"
+                android:textColor="@color/white"
+                android:layout_marginRight="1dp"
+                android:padding="2dp"
+                android:textSize="@dimen/resultTextSize"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:inputType="number"
+                android:text="Total Bazar: "
+                android:id="@+id/totalBazarR"
+                android:layout_weight="1"
+                android:background="@color/result_head_baground"
+                android:textColor="@color/white"
+                android:layout_marginBottom="1dp"
+                android:padding="5dp"
+                android:textSize="@dimen/resultTextSize"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:inputType="number"
+                android:text="Total Extra : "
+                android:id="@+id/totalExtraR"
+                android:layout_weight="1"
+                android:background="@color/result_head_baground"
+                android:textColor="@color/white"
+                android:padding="2dp"
+                android:textSize="@dimen/resultTextSize"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="1dp">
+                    <TextView
+                        android:layout_width="40dp"
+                        android:layout_height="match_parent"
+                        android:text="No"
+                        android:id="@+id/sirialNo"
+                        android:gravity="center"
+                        android:background="#00A7E5"
+                        android:layout_marginRight="1dp"
+                        android:padding="5dp"
+                        android:textSize="@dimen/resultTextSize"
+                        android:textColor="@color/white"/>
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:text="Name"
+                        android:gravity="center"
+                        android:id="@+id/name"
+                        android:background="#00A7E5"
+                        android:layout_marginRight="1dp"
+                        android:padding="2dp"
+                        android:textSize="@dimen/resultTextSize"
+                        android:textColor="#ffffff"/>
+                    <TextView
+                        android:layout_width="75dp"
+                        android:layout_height="match_parent"
+                        android:text="Deposit"
+                        android:gravity="center"
+                        android:id="@+id/deposit"
+                        android:background="#00A7E5"
+                        android:layout_marginRight="1dp"
+                        android:padding="2dp"
+                        android:textSize="@dimen/resultTextSize"
+                        android:textColor="#ffffff"/>
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="match_parent"
+                        android:text="Meal"
+                        android:gravity="center"
+                        android:id="@+id/meal"
+                        android:background="#00A7E5"
+                        android:layout_marginRight="1dp"
+                        android:padding="2dp"
+                        android:textSize="@dimen/resultTextSize"
+                        android:textColor="#ffffff"/>
+                    <TextView
+                        android:layout_width="90dp"
+                        android:layout_height="match_parent"
+                        android:text="Meal Cost"
+                        android:gravity="center"
+                        android:id="@+id/mealCost"
+                        android:background="#00A7E5"
+                        android:layout_marginRight="1dp"
+                        android:padding="2dp"
+                        android:textSize="@dimen/resultTextSize"
+                        android:textColor="#ffffff"/>
+                    <TextView
+                        android:layout_width="90dp"
+                        android:layout_height="match_parent"
+                        android:text="Utility"
+                        android:gravity="center"
+                        android:id="@+id/extra"
+                        android:background="#00A7E5"
+                        android:layout_marginRight="1dp"
+                        android:padding="2dp"
+                        android:textSize="@dimen/resultTextSize"
+                        android:textColor="#ffffff"/>
+                    <TextView
+                        android:layout_width="90dp"
+                        android:layout_height="match_parent"
+                        android:text="Total Cost"
+                        android:gravity="center"
+                        android:id="@+id/totalCost"
+                        android:background="#00A7E5"
+                        android:layout_marginRight="1dp"
+                        android:padding="2dp"
+                        android:textSize="@dimen/resultTextSize"
+                        android:textColor="#ffffff"/>
+                    <TextView
+                        android:layout_width="90dp"
+                        android:layout_height="match_parent"
+                        android:text="Rest Mony"
+                        android:gravity="center"
+                        android:id="@+id/restMony"
+                        android:background="#00A7E5"
+                        android:layout_marginRight="1dp"
+                        android:padding="2dp"
+                        android:textSize="@dimen/resultTextSize"
+                        android:textColor="#ffffff"/>
+                </LinearLayout>
+
+
+                <ListView
+                    android:id="@+id/resultListView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </ListView>
+            </LinearLayout>
+        </HorizontalScrollView>
+    </LinearLayout>
+
+
+
+</LinearLayout>

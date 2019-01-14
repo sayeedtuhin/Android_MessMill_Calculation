@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@color/background"
+
+    tools:context=".DialogActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#028475"
+        android:layout_marginBottom="2dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            android:text="Total Bazar Cost"
+            android:gravity="center" />
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="2dp"
+            android:inputType="numberDecimal"
+            android:padding="5dp"
+            android:background="#ffffff"
+            android:id="@+id/totalBazar"
+            android:textSize="16sp"
+            android:hint="Total Bazar Cost"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#028475"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            android:text="Utility"
+            android:gravity="center" />
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:inputType="numberDecimal"
+            android:padding="5dp"
+            android:background="#ffffff"
+            android:id="@+id/totalExtra"
+            android:textSize="16sp"
+            android:hint="Utility"
+            android:gravity="center"/>
+    </LinearLayout>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:onClick="calculate"
+        android:textSize="16sp"
+        android:text="Calculate"
+        android:background="@drawable/custom_button"
+        android:textColor="@drawable/text_color"
+        android:layout_marginTop="20dp"
+        android:gravity="center"/>
+
+
+</LinearLayout>
